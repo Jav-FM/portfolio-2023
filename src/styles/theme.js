@@ -30,6 +30,8 @@ main.light = extendTheme({
   colors: {
     primary: "#1F1F1F",
     secondary: "#A78976",
+    tertiary: "#f5f2f2",
+    middleNavbarBackground: "#A78976",
   },
   fonts,
   fontWeights,
@@ -49,6 +51,8 @@ main.dark = extendTheme({
   colors: {
     primary: "#A78976",
     secondary: "#1F1F1F",
+    tertiary: "#171616",
+    middleNavbarBackground: "#918e8e",
   },
   fonts,
   fontWeights,
@@ -56,7 +60,7 @@ main.dark = extendTheme({
   styles: {
     global: {
       "html, body": {
-        background: "#000",
+        background: "#292828",
         color: "#D9D9D9",
       },
     },
