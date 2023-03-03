@@ -1,6 +1,6 @@
 import { useState } from "react";
 import Head from "next/head";
-import { ChakraProvider, Switch } from "@chakra-ui/react";
+import { ChakraProvider, CSSReset } from "@chakra-ui/react";
 import Layout from "../shared/components/Layout";
 import { theme } from "../styles/theme";
 import { appWithTranslation } from "next-i18next";
@@ -11,6 +11,7 @@ const App = ({ Component, pageProps }) => {
   const isDark = mode === "dark";
   return (
     <ChakraProvider theme={theme.main[mode]}>
+      <CSSReset />
       <Layout toggleMode={toggleMode} isDark={isDark}>
         <Head>
           <title>Jav's Portfolio</title>
